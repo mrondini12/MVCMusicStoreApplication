@@ -1,7 +1,7 @@
 ﻿@model MVCMusicStoreApplication.Models.Album
 
 @{
-     ViewBag.Title = "Details";
+    ViewBag.Title = "Details";
 }
 
 <h2>Details</h2>
@@ -22,7 +22,8 @@
 </h3>
 <br>
 
-@Html.ActionLink("Add to Cart", "Cart", "Store", new { @class = "btn btn-primary" })
+@Html.ActionLink("Add to Cart", "AddToCart", "ShoppingCart", new { id = Model.AlbumId }, new { @class = "btn btn-primary" })
+
 
 
 
